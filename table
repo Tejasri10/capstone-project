@@ -1,0 +1,24 @@
+use social_media;
+
+create table users (
+    id integer primary key auto_increment,
+    name varchar(50),
+	profile varchar(50),
+    password varchar(50),
+    headline varchar(100),
+    token varchar(500)
+);
+
+
+create table posts (
+
+     profile varchar(50),
+     content varchar(5000),
+     likes integer,
+     shares integer
+     );
+
+
+
+     insert into posts (profile, content, likes, shares)
+values ('teja_sri','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',3,5),('entri_telugu','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',5,3);
